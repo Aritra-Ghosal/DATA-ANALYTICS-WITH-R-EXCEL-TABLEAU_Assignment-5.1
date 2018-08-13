@@ -1,0 +1,72 @@
+> States = rownames(USArrests)
+> View(States)
+> vowel=0
+> isVowel <- function(char) char %in% c('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+> for(i in 1:50)
++  {
++   v=0
++   a <- States[i]
++   splitted <- strsplit(a, '')[[1]]
++   for(a in splitted)  
++   {
++     if(isVowel(a) == TRUE)
++       {
++        v <- v+1
++       }
++   }
++   vowel <- vowel+v
++   print(paste0("In sate ", States[i], " number of vowel is ", v))
++  }
+[1] "In sate Alabama number of vowel is 4"
+[1] "In sate Alaska number of vowel is 3"
+[1] "In sate Arizona number of vowel is 4"
+[1] "In sate Arkansas number of vowel is 3"
+[1] "In sate California number of vowel is 5"
+[1] "In sate Colorado number of vowel is 4"
+[1] "In sate Connecticut number of vowel is 4"
+[1] "In sate Delaware number of vowel is 4"
+[1] "In sate Florida number of vowel is 3"
+[1] "In sate Georgia number of vowel is 4"
+[1] "In sate Hawaii number of vowel is 4"
+[1] "In sate Idaho number of vowel is 3"
+[1] "In sate Illinois number of vowel is 4"
+[1] "In sate Indiana number of vowel is 4"
+[1] "In sate Iowa number of vowel is 3"
+[1] "In sate Kansas number of vowel is 2"
+[1] "In sate Kentucky number of vowel is 2"
+[1] "In sate Louisiana number of vowel is 6"
+[1] "In sate Maine number of vowel is 3"
+[1] "In sate Maryland number of vowel is 2"
+[1] "In sate Massachusetts number of vowel is 4"
+[1] "In sate Michigan number of vowel is 3"
+[1] "In sate Minnesota number of vowel is 4"
+[1] "In sate Mississippi number of vowel is 4"
+[1] "In sate Missouri number of vowel is 4"
+[1] "In sate Montana number of vowel is 3"
+[1] "In sate Nebraska number of vowel is 3"
+[1] "In sate Nevada number of vowel is 3"
+[1] "In sate New Hampshire number of vowel is 4"
+[1] "In sate New Jersey number of vowel is 3"
+[1] "In sate New Mexico number of vowel is 4"
+[1] "In sate New York number of vowel is 2"
+[1] "In sate North Carolina number of vowel is 5"
+[1] "In sate North Dakota number of vowel is 4"
+[1] "In sate Ohio number of vowel is 3"
+[1] "In sate Oklahoma number of vowel is 4"
+[1] "In sate Oregon number of vowel is 3"
+[1] "In sate Pennsylvania number of vowel is 4"
+[1] "In sate Rhode Island number of vowel is 4"
+[1] "In sate South Carolina number of vowel is 6"
+[1] "In sate South Dakota number of vowel is 5"
+[1] "In sate Tennessee number of vowel is 4"
+[1] "In sate Texas number of vowel is 2"
+[1] "In sate Utah number of vowel is 2"
+[1] "In sate Vermont number of vowel is 2"
+[1] "In sate Virginia number of vowel is 4"
+[1] "In sate Washington number of vowel is 3"
+[1] "In sate West Virginia number of vowel is 5"
+[1] "In sate Wisconsin number of vowel is 3"
+[1] "In sate Wyoming number of vowel is 2"
+> paste("Total nuber of vowels in USA States is", vowel)
+[1] "Total nuber of vowels in USA States is 177"
+>
